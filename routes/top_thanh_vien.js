@@ -2,16 +2,20 @@
 // var router = express.Router();
 // var utils = require('../commons/utils');
 // var axios = require('axios');
+
 // var jsonfile = require('jsonfile')
 
-
-// let foods = null;
-// let data_saved = './datas/data_3.json';
 // let path = __dirname;
-// let COUNTER = 2201;
-// let timer_ = 1000 * 60 * 0.5;
-// let page = 2201;
-// let total_food = 0;
+// let data_saved = './datas/users/data_1.json';
+
+// let COUNTER = 1;
+
+// let timer_ = 1000 * 60 * 1;
+
+// let page = 1;
+
+// let list_users = null;
+
 // let TIMER = null;
 
 // TIMER = setInterval(function() {
@@ -34,13 +38,26 @@
 //     // handle error
 //     console.log(error);
 //   });
-//   if (COUNTER == 2500 || COUNTER == 2501 ) {
+//   if (COUNTER == 100 || COUNTER == 101 ) {
 //     clearInterval(TIMER);
 //     console.log("Finish crawl: " + page);
-//     console.log("Total food crawled: " + total_food);
+//     console.log("Total user infos crawled: " + total_food);
 //   }
-//   console.log("Crawling page: " + page);
+//   console.log("Crawling users page: " + page);
 //   page++;
+
+//   if (20 <= page && page < 40) {
+//     data_saved = './datas/users/data_2.json';
+//   }
+//   if (40 <= page && page < 60) {
+//     data_saved = './datas/users/data_3.json';
+//   }
+//   if (60 <= page && page < 80) {
+//     data_saved = './datas/users/data_4.json';
+//   }
+//   if (80 <= page && page <= 100) {
+//     data_saved = './datas/users/data_5.json';
+//   }
 
 // }, timer_);
 

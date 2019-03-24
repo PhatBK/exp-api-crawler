@@ -8,11 +8,18 @@ var app = require('../app');
 var debug = require('debug')('exp-api-crawl:server');
 var http = require('http');
 
+var configs = require('../config');
+
 /**
  * Get port from environment and store in Express.
  */
 
+// console.log(process.argv);
+
+// var port = process.argv['2'];
+
 var port = normalizePort(process.env.PORT || '9000');
+
 app.set('port', port);
 
 /**
@@ -20,6 +27,9 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+console.log("Server is running port: " + port);
+
 
 /**
  * Listen on provided port, on all network interfaces.

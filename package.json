@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "crawl": "nodemon ./bin/www"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -12,7 +13,9 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "jsonfile": "^5.0.0",
+    "morgan": "~1.9.0",
+    "serialize-javascript": "^1.6.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
